@@ -6,6 +6,7 @@
         <title>Bookmark</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -29,15 +30,15 @@
 
                 <div class="navbar-links">
                     <ul class="nav-links">
-                        <li class="navbar_links">Product</li>
-                        <li class="navbar_links">Company</li>
-                        <li class="navbar_links">Contact</li>
+                        <li class="navbar_links"><a href="#">Product</a></li>
+                        <li class="navbar_links"><a href="#">Company</a></li>
+                        <li class="navbar_links"><a href="#">Contact</a></li>
                     </ul>
+                </div>
 
-                    <div class="nav-buttons">
-                        <a href="#">Login</a>
-                        <button><a href="#">Sign Up</a></button>
-                    </div>
+                <div class="nav-buttons">
+                    <a class="nav-link-1" href="#">Login</a>
+                    <button class="nav-link-2"><a href="#" class="nav-link-3">Sign Up</a></button>
                 </div>
             </div>
 
@@ -60,7 +61,9 @@
                 <h2 class="blogr-text-1">Designed for the future</h2>
             </div>
 
-            <div class="blogr-2">
+            <div class="blogr-2" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
                 <div class="blogr-2-1">
                     <h2 class="blogr-feature-intro">Introducing an extensible editor</h2>
                     <p class="blogr-feautre-2">
@@ -71,7 +74,7 @@
                     </p>
 
                     <div class="blogr-2-2">
-                        <h2 class="blogr-feautre-2">Robust content management</h2>
+                        <h2 class="blogr-feautre-2-1">Robust content management</h2>
                         <p class="blogr-feautre-3">
                             Flexible content management enables users to easily move through posts. Increase the usability of your blog 
                             by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
@@ -79,32 +82,37 @@
                     </div>
                 </div>
 
-                <div class="blogr-2-2">
+                <div class="blogr-2-2-pic data-aos="flip-left>
                     <img src="images/illustration-editor-desktop.svg" alt="illustration-editor-desktop" class="blogr-feautre-image-laptop">
                     <img src="images/illustration-editor-mobile.svg" alt="" class="blogr-feautre-image-mobile">
                 </div>
             </div>
-        </section>
 
-        <!-- FEATURES SECTION 2 -->
-
-        <section id="feautre-2">
             <div class="blogr_feautre_2_2">
-                <div class="phone-mockup">
-                   <img src="images/illustration-phones.svg" alt="illustration-phones" class="phone-mockup-laptop-mobile">
-                </div>
-
-                <div class="feautre-2-text">
-                    <h1 class="feautre-2-text-1">State of the Art Infrastructure</h1>
-                    <p class="feautre-2-text-2">  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
-                        This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
-                </div>
+               <div class="blogr-2-2-contents" data-aos="fade-zoom-in"
+               data-aos-easing="ease-in-back"
+               data-aos-delay="300"
+               data-aos-offset="0">           
+                   <div class="phone-img">
+                    <img src="images/illustration-phones.svg" alt="illustration-phones" class="phone-mockup-laptop-mobile">
+                   </div>
+                 <div class="feautre-2-text">
+                     <h1 class="feautre-2-text-1">State of the Art Infrastructure</h1>
+                     <p class="feautre-2-text-2">  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+                         This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+                     </p>
+                 </div>    
+               </div>
             </div>
+
         </section>
+
 
         <!-- FEATURES SECTION 3 -->
-        <section class="feautre-3">
-            <div class="blogr-feautre-3">
+        <section id="feautre-3">
+            <div class="blogr-feautre-3" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
                 <div class="laptop-images">
                     <img src="images/illustration-laptop-desktop.svg" alt="illustration-laptop-desktop" class="laptop-mockup-desktop">
                     <img src="images/illustration-laptop-mobile.svg" alt="illustration-laptop-mobile" class="laptop-mockup-phones">
@@ -112,7 +120,7 @@
 
                 <div class="feautre-3-texts">
                     <div class="feautre-3-text-1">
-                        <h3>Free, open, simple</h3>
+                        <h1>Free, open, simple</h1>
                         <p>
                             Blogr is a free and open source application backed by a large community of helpful developers. It supports 
                             features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
@@ -121,7 +129,7 @@
                     </div>
 
                     <div class="feautre-3-text-2">
-                        <h3> Powerful tooling</h3>
+                        <h1> Powerful tooling</h1>
                         <p>
                             Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
                             capable of producing even the most complicated sites.
@@ -132,46 +140,50 @@
         </section>
 
         <!-- FOOTER SECTION -->
-        <footer class="blogr-footer">
+        <footer id="blogr-footer">
             <div class="footer-links">
                 <div class="footer-logo">
                     <img src="images/logo.svg" alt="blogr-logo">
                 </div>
 
                 <div class="footer-links-1">
-                    <h3>Product</h3>
+                    <h3 class="footer-heading">Product</h3>
                     <ul class="footer-links-1-0">
-                        <li class="footer-links-1-1">Overview</li>
-                        <li class="footer-links-1-1">Pricing</li>
-                        <li class="footer-links-1-1">Marketplace</li>
-                        <li class="footer-links-1-1"> Features</li>
-                        <li class="footer-links-1-1">Integrations</li>
+                        <li class="footer-links-1-1"><a href="#">Overview</a></li>
+                        <li class="footer-links-1-1"><a href="#">Pricing</a></li>
+                        <li class="footer-links-1-1"><a href="#">Marketplace</a></li>
+                        <li class="footer-links-1-1"><a href="#">Features</a></li>
+                        <li class="footer-links-1-1"><a href="#">Integrations</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-links-2">
-                    <h3>Company</h3>
+                    <h3 class="footer-heading">Company</h3>
                     <ul class="footer-links-2-0">
-                        <li class="footer-links-1-1">About</li>
-                        <li class="footer-links-1-1">Team</li>
-                        <li class="footer-links-1-1">Blog</li>
-                        <li class="footer-links-1-1">Careers</li>
+                        <li class="footer-links-1-1"><a href="#">About</a></li>
+                        <li class="footer-links-1-1"><a href="#">Team</a></li>
+                        <li class="footer-links-1-1"><a href="#">Blog</a></li>
+                        <li class="footer-links-1-1"><a href="#">Careers</a></li>
                     </ul>
                 </div>
             
                 <div class="footer-links-3">
-                    <h3>Connect</h3>
+                    <h3 class="footer-heading">Connect</h3>
                     <ul class="footer-links-3-0">
-                        <li class="footer-links-1-1">Contact</li>
-                        <li class="footer-links-1-1">Newsletter</li>
-                        <li class="footer-links-1-1">LinkedIn</li>
+                        <li class="footer-links-1-1"><a href="#">Contact</a></li>
+                        <li class="footer-links-1-1"><a href="#">Newsletter</a></li>
+                        <li class="footer-links-1-1"><a href="#">LinkedIn</a></li>
                     </ul>
                 </div>
             </div>
 
             <div class="copy-right"><a href="https://linktr.ee/codingninja">&copy; Coding Ninja 🥷</a></div>
         </footer>
-    
+        
+        <script>
+            AOS.init();
+        </script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="app.js" ></script>
     </body>
 </html>
