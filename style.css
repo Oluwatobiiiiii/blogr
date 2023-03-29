@@ -134,8 +134,8 @@ a,p{
 }
 
 .hero-1{
-    width: 100px;
-    height: 30px;
+    width: 130px;
+    height: 45px;
     border-radius: 10px;
     border-radius: 20px;
     border: none;
@@ -143,9 +143,19 @@ a,p{
     color: var(--Light-red--);
 }
 
+.hero-1:hover{
+    background-color: var(--Very--light--red-CTA-hover-background--);
+    color: var(--White-text--);
+}
+
+.hero-2:hover{
+    background-color: var(--White-text--);
+    color: var(--Light-red--);
+}
+
 .hero-2{
-    width: 100px;
-    height: 30px;
+   width: 130px;
+    height: 45px;
     border-radius: 20px;
     border: 1px solid;
     cursor: pointer;
