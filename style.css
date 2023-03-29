@@ -159,7 +159,7 @@ a,p{
     border-radius: 20px;
     border: 1px solid;
     cursor: pointer;
-    color: white;
+    color: var(--White-text--);
     background-color: transparent;
     border-color: var(--White-text--);
 }
