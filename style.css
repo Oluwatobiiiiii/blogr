@@ -316,6 +316,8 @@ a,p{
 
 .phone-img{
     height: 400px;
+    bottom: 20px;
+    position: relative;
 }
 
 
@@ -476,6 +478,10 @@ a,p{
 
     .blogr_feautre_2_2{
         position: relative;
+    }
+
+    .feautre-2-text{
+        padding-bottom: 100px;
     }
 
     .phone-mockup-laptop-mobile{
