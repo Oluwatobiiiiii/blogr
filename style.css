@@ -308,7 +308,7 @@ a,p{
     background-color: var(--Very-dark-gray-blue--);
     border-top-right-radius: 100px;
     border-bottom-left-radius: 100px;
-    /* padding: 0 4%; */
+    /* padding:  0%; */
     background-image: url(images/bg-pattern-circles.svg);
     background-repeat: no-repeat;
     background-position: top -390px left -60px, center center;;
@@ -320,6 +320,7 @@ a,p{
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding: 5px 0%;
 }
 
 .phone-img{
