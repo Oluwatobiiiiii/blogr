@@ -40,11 +40,12 @@ a,p{
 /* STYLING FOR THE WEBSITE */
 #navbar{
     background-color: var(--Very-light-red--);
-    height: 25rem;
+    height: 60vh;
     background-image: url(images/bg-pattern-intro-desktop.svg);
     background-repeat: no-repeat;
     background-size: cover 500%;
-    background-position: center;
+    /* background-position: center; */
+    background-position: top 50% left 25%;
     border-bottom-left-radius: 60px;
 }
 
@@ -62,10 +63,19 @@ a,p{
 .nav-bar{
     display: flex;
     flex-direction: row;
-    max-width: auto;
+    max-width: 1800px;
+    margin: auto;
     align-items: center;
     padding: 2rem;
 }
+
+.nav-nav{
+    display: flex;
+    flex-direction: row;
+    width: 1800px;
+}
+
+
 
 .navbar-links{
     display: flex;
@@ -117,7 +127,7 @@ a,p{
 
 /* HOME SECTION */
 .hero-section{
-    margin-top: 70px;
+    margin-top: 45px;
     text-align: center;
 }
 
@@ -191,8 +201,7 @@ a,p{
     flex-direction: row;
     align-items: center;
     overflow: hidden;
-    margin-left: 2rem;
-     padding: 0 5%;
+    padding: 0 4%;
 }
 
 .blogr-2-1{
@@ -215,10 +224,6 @@ a,p{
 .blogr-feautre-2{
     color: var(--Very-dark-grayish-blue-body-copy--);
 }
-.blogr_feautre_2_2{
-     padding: 0 5%;
-}     
-
 
 .blogr-feautre-3{
     color: var(--Very-dark-grayish-blue-body-copy--);
@@ -266,7 +271,7 @@ a,p{
 }
 
 .blogr-feautre-image-laptop{
-    width:  500px;
+    width:  530px;
     height: 500px;
     display: block;
     position: relative;
@@ -280,11 +285,11 @@ a,p{
     border-top-right-radius: 100px;
     border-bottom-left-radius: 100px;
     height: 450px;
-    
+    padding: 0 4%;
 }
 
 .blogr-2-2-contents{
-    margin-left: 2rem;
+    margin-left: 3rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -299,10 +304,10 @@ a,p{
 /* FEAUTRES SECTION 3 */
 #feautre-3{
     margin-top: 4rem;
-     padding: 0 5%;
+    width: 100%;
 }
 
-.blogr-feautre-3{
+.blogr-feautre-3-1{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -324,10 +329,9 @@ a,p{
 }
 
 .feautre-3-texts{
-    flex: 50%;
+   flex: 50%;
    margin-right: 3rem;
 }
-
 
 /* FOOTER */
 
@@ -403,3 +407,99 @@ a,p{
     text-decoration: none;
     color: var(--Very-dark-black-blue-footer-background--);
 }
+
+
+/* MEADIA RESPONSIVITY FOR TABLETS */
+
+@media screen and (max-width: 870px){
+
+    .nav-bar-items{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .navabar-toggle{
+        display: block;
+    }
+    
+    .nav-nav{
+        display: none;
+    }
+
+    .nav-close{
+        display: none;
+    }
+
+    .blogr-2{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 1rem;
+    }
+
+    .blogr-2-1{
+        text-align: center;
+    }
+
+    .blogr-2-2-contents{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .phone-img{
+        display: none;
+    }
+
+    .blogr_feautre_2_2{
+        background-image: url(images/illustration-phones.svg);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: 300px;
+        background-position: top;
+    }
+
+    .feautre-2-text{
+        margin-top: 20rem;
+    }
+
+    .blogr_feautre_2_2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blogr-feautre-image-laptop{
+        display: none;
+    }
+
+    .blogr-feautre-image-mobile{
+        display: block;
+    }
+
+    .blogr-feautre-3-1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .laptop-mockup-desktop{
+        display: none;
+    }
+
+    .laptop-mockup-phones{
+        display: block;
+    }
+
+    .feautre-3-texts{
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-links{
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 25px;
+    }
+
+} 

@@ -19,26 +19,31 @@
         <!-- NAVBAR -->
         <section id="navbar">
             <div class="nav-bar">
-                <div class="nav-bar-logo">
-                    <img src="images/logo.svg" alt="Blogr Logo" class="blogr-logo">
+                <div class="nav-bar-items">
+                    <div class="nav-bar-logo">
+                        <img src="images/logo.svg" alt="Blogr Logo" class="blogr-logo">
+                    </div>
+    
+                    <div class="navabar-toggle">
+                        <img src="images/icon-hamburger.svg" alt="icon-hamburger" class="nav-hamburger">
+                        <img src="images/icon-close.svg" alt="icon-close" class="nav-close">
+                    </div>
                 </div>
+                
 
-                <div class="navabar-toggle">
-                    <img src="images/icon-hamburger.svg" alt="icon-hamburger" class="nav-hamburger">
-                    <img src="images/icon-close.svg" alt="icon-close" class="nav-close">
-                </div>
-
-                <div class="navbar-links">
-                    <ul class="nav-links">
-                        <li class="navbar_links"><a href="#">Product</a></li>
-                        <li class="navbar_links"><a href="#">Company</a></li>
-                        <li class="navbar_links"><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="nav-buttons">
-                    <a class="nav-link-1" href="#">Login</a>
-                    <button class="nav-link-2"><a href="#" class="nav-link-3">Sign Up</a></button>
+                <dv class="nav-nav">
+                    <div class="navbar-links">
+                        <ul class="nav-links">
+                            <li class="navbar_links"><a href="#">Product</a></li>
+                            <li class="navbar_links"><a href="#">Company</a></li>
+                            <li class="navbar_links"><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="nav-buttons">
+                        <a class="nav-link-1" href="#">Login</a>
+                        <button class="nav-link-2"><a href="#" class="nav-link-3">Sign Up</a></button>
+                    </div>
                 </div>
             </div>
 
@@ -82,7 +87,11 @@
                     </div>
                 </div>
 
-                <div class="blogr-2-2-pic data-aos="flip-left>
+                <div class="blogr-2-2-pic data-aos="flip-left transition={{
+                    ease: "linear",
+                    duration: 2,
+                    x: { duration: 1 }
+                  }}>
                     <img src="images/illustration-editor-desktop.svg" alt="illustration-editor-desktop" class="blogr-feautre-image-laptop">
                     <img src="images/illustration-editor-mobile.svg" alt="" class="blogr-feautre-image-mobile">
                 </div>
@@ -110,7 +119,7 @@
 
         <!-- FEATURES SECTION 3 -->
         <section id="feautre-3">
-            <div class="blogr-feautre-3" data-aos="flip-left"
+            <div class="blogr-feautre-3-1" data-aos="flip-left"
             data-aos-easing="ease-out-cubic"
             data-aos-duration="2000">
                 <div class="laptop-images">
@@ -180,10 +189,11 @@
             <div class="copy-right"><a href="https://linktr.ee/codingninja">&copy; Coding Ninja 🥷</a></div>
         </footer>
         
+
+       
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init();
         </script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script src="app.js" ></script>
     </body>
 </html>
