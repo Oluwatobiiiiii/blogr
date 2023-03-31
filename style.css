@@ -40,7 +40,7 @@ a,p{
 /* STYLING FOR THE WEBSITE */
 #navbar{
     background-color: var(--Very-light-red--);
-    height: 60vh;
+    height: 500px;
     background-image: url(images/bg-pattern-intro-desktop.svg);
     background-repeat: no-repeat;
     background-size: cover 500%;
