@@ -447,6 +447,10 @@ a,p{
         text-align: center;
     }
 
+    .blogr_feautre_2_2{
+        height: 500px;
+    }
+
     .phone-img{
         display: none;
     }
@@ -490,6 +494,8 @@ a,p{
     }
 
     .feautre-3-texts{
+        margin-left: 2rem;
+        margin-right: 2rem;
         align-items: center;
         text-align: center;
     }
