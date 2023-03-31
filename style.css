@@ -218,34 +218,42 @@ a,p{
 }
 
 .blogr-feature-intro{
-    font-size: 1.8rem;
+    font-size: 25px;
     color: var(--Very-dark-desaturated-blue--);
     margin-bottom: 10px;
+    font-family: 'Overpass', sans-serif;
 }
 
 .blogr-feautre-2-1{
-    font-size: 1.8rem;
+    font-size: 25px;
     color: var(--Very-dark-desaturated-blue--);
     margin-bottom: 10px;
+    font-family: 'Overpass', sans-serif;
 }
 
 .blogr-feautre-2{
     color: var(--Very-dark-grayish-blue-body-copy--);
+    font-family: 'Overpass', sans-serif;
+    font-size: 16px;
 }
 
 .blogr-feautre-3{
     color: var(--Very-dark-grayish-blue-body-copy--);
+    font-family: 'Overpass', sans-serif;
+    font-size: 16px;
 }
 
 .feautre-2-text-1{
     font-size: 35px;
+    font-family: 'Overpass', sans-serif;
     color: var(--White-text--);
     padding-bottom: 2rem;
 }
 
 .feautre-2-text-2{
-    color: var(--White-text--);
+    color: #FFFFFFD6;
     font-size: 17px;
+    font-family: 'Overpass', sans-serif;
 }
 
 .feautre-3-text-1 > h1{
